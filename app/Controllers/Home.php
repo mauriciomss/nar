@@ -41,8 +41,32 @@ class Home extends BaseController
 
 		helper(['form', 'url']);
 
+
+		require("lib/phpmailer/class.phpmailer.php");
+        require("lib/phpmailer/class.smtp.php");
+        require("lib/phpmailer/Config.php");
+        
+        $mail->Subject = "Contacto desde la Web"; // Este es el titulo del email.
+        $mail->AddAddress( 'contacto@planeta-golosinas.com.ar' );
+
+        $mail->AddReplyTo($_POST['email'], $_POST['nombre']);
+
+        $html = file_get_contents('vistas/plantilla000.html');
+        $html = str_replace("[nombre]", $_POST['nombre'], $html);
+        $html = str_replace("[email]", $_POST['email'], $html);
+        $html = str_replace("[mensaje]", $_POST['message'], $html);
+
+        //echo $html; die();
+
+        $mail->msgHTML($html);
+        $estadoEnvio = $mail->Send();
+
+		echo json_encode(array( "error" => false ));
+
+		
 		$data = [
-	        'ok' => true
+	        'ok' => true,
+			'data' => "sdfsdfsd"
 		];
 
 		return $this->response->setJSON($data);

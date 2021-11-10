@@ -65,6 +65,30 @@
     <!-- Template Main JS File -->
     <script src="<?=base_url('assets/sitio/js/main.js');?>"></script>
 
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $(document).on("click","#enviar", function(event) {
+					
+	            $.ajax({
+	                type: "POST",
+	                url: "index.php?ctrl=Inicio&accion=Contacto",
+	                data: "nombre="+$("#cnombre").val()+"&email="+$("#cemail").val()+"&message="+$("#cmessage").val(),
+	                dataType : 'json',                     
+	                success: function(data) {
+	                	$("#myModalEnviar").modal("show");
+	                }
+	            });					
+				
+            	return false;
+            });
+
+        });
+
+    </script>
+
 </body>
 
 </html>
