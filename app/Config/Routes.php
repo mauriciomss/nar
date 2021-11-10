@@ -45,6 +45,7 @@ $routes->get('servicios/steel_framing', 'Servicios::steel_framing');
 $routes->get('servicios/brimax', 'Servicios::brimax');
 
 $routes->get('contacto', 'Home::contacto');
+$routes->match(['get','post'],'/contact', 'Home::contact');
 
 
 
@@ -72,6 +73,8 @@ $routes->match(['get','post'],'/admin/propiedades/editar/(:segment)', 'ADMINProp
 $routes->match(['get','post'],'/admin/propiedades/saveeditar', 'ADMINPropiedades::saveeditar', ['filter' => 'auth']);
 
 $routes->match(['get','post'],'/admin/propiedades/eliminar/(:segment)', 'ADMINPropiedades::eliminar/$1', ['filter' => 'auth']);
+
+$routes->match(['get','post'],'/admin/propiedades/guardarimagen/(:segment)', 'ADMINPropiedades::guardarimagen/$1', ['filter' => 'auth']);
 
 
 

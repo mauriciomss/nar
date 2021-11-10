@@ -119,20 +119,18 @@
 	            <!-- Modal content-->
 	            <div class="modal-content">
 	                <div class="modal-body">
-	                    <div class="row">
-	                        <div class="col-lg-4">
-	                            <div id="select_image" style="width:400px"></div>
-	                        </div>
-	                    </div>
-	                    <div class="row">
-	                        <div class="col-lg-4">
-	                            <input type="file" id="upload">
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="modal-footer justify-content-between">
-	                	<button type="button" class="btn btn-success upload_result">Guardar</button>
-	                    <button type="button" class="btn btn-default mr-auto" data-dismiss="modal">Cerrar</button>
+
+						<form method="post" action="<?=base_url('/admin/propiedades/guardarimagen').'/'.$propiedades_id;?>" enctype="multipart/form-data">
+						<div class="form-group">
+							<label>Imagen</label>
+							<input type="file" accept="image/*" name="file" class="form-control">
+						</div>
+
+						<div class="form-group">
+							<button type="submit" class="btn btn-danger">Subir</button>
+						</div>
+						</form>
+
 	                </div>
 	            </div>
 
@@ -169,65 +167,11 @@
     <?php //include "parciales/SCRIPTParcial.php"; ?>
 
 	    <script type="text/javascript">
-	        $uploadCrop = $('#select_image').croppie({
-	            enableExif: true,
-	            viewport: {
-	                width: 450,
-	                height: 450,
-	                type: 'square'
-	            },
-	            boundary: {
-	                width: 470,
-	                height: 470
-	            }
-	        });
-
-
-	        $('#upload').on('change', function () {
-	            var reader = new FileReader();
-	            reader.onload = function (e) {
-	                $uploadCrop.croppie('bind', {
-	                    url: e.target.result
-	                }).then(function(){
-	                    console.log('jQuery bind complete');
-	                });
-	            }
-	            reader.readAsDataURL(this.files[0]);
-	        });
-
-
-	        $('.upload_result').on('click', function (ev) {
-	            $uploadCrop.croppie('result', {
-	                type: 'canvas',
-	                size: 'viewport'
-	            }).then(function (resp) {
-	                $.ajax({
-	                    url: "<?=base_url('Emprendedores/imagenRecortada/');?>",
-	                    type: "POST",
-	                    data: {"image":resp, "id":<?=$propiedades_id;?>},
-	                    //dataType : 'json',
-	                    success: function (data) {
-							html = '<li id="img-'+data.id+'">'+
-							'			<span class="mailbox-attachment-icon has-img"><img src="'+resp+'" alt="Attachment"></span>'+
-							'			<div class="mailbox-attachment-info">'+
-							'				<a href="#" class="mailbox-attachment-name"><i class="fas fa-camera"></i> imagen</a>'+
-							'				<span class="mailbox-attachment-size clearfix mt-1">'+
-							'					<span> </span>'+
-							'					<a href="#" class="btn btn-default btn-sm float-right eliminar" rel="'+data.id+'"><i class="fas fa-trash-alt"></i></a>'+
-							'				</span>'+
-							'			</div>'+
-							'		</li>';
-	                        $("#upload_imagenes").append(html);
-	                        $("#myModal").modal("hide");
-	                    }
-	                });
-	            });
-	        });
 
 	        $( document ).on( "click", ".eliminar", function() {
 	        	var id = $(this).attr('rel');
 
-            	var v_url = "<?=base_url('emprendedores/imagenes/eliminar/');?>/"+id;
+            	var v_url = "<?=base_url('/admin/propiedades/imagenes/eliminar/');?>/"+id;
                 $.ajax({
                     type: "GET",
                     url: v_url,
@@ -249,7 +193,6 @@
                 });
 
 	        });
-
 
 	    </script>
 

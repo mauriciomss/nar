@@ -203,6 +203,54 @@ class ADMINPropiedades extends BaseController{
 		return view('admin/PropiedadesImagenes', $data);
     }
 
+
+
+	
+    public function guardarimagen($propiedades_id = null){
+		
+        helper(['form', 'url']);
+
+        $input = $this->validate([
+            'file' => [
+                'uploaded[file]',
+                'mime_in[file,image/jpg,image/jpeg,image/png]',
+                'max_size[file,1024]',
+            ]
+        ]);
+    
+        if (!$input) {
+            print_r('Choose a valid file');
+			return redirect()->to('/admin/propiedades/imagenes/'.$propiedades_id);
+        } else {
+			$imageName = time().'.jpg';
+
+            $img = $this->request->getFile('file');
+			$img->move(ROOTPATH.'/imagenes/', $imageName);
+			
+			// *************************************************************
+
+			$PropiedadesimagenesModel = new PropiedadesimagenesModel();
+			$existPrincipal = $PropiedadesimagenesModel->existPrincipal($propiedades_id);
+			if ( $existPrincipal->existe > 0 ) {
+				$save = [
+					'propiedades_id' => $propiedades_id,
+					'file'             => $imageName
+				];
+			} else {
+				$save = [
+					'propiedades_id' => $propiedades_id,
+					'file'             => $imageName,
+					'principal'        => 1
+				];
+			}
+			$PropiedadesimagenesModel->save($save);
+
+			return redirect()->to('/admin/propiedades/imagenes/'.$propiedades_id);
+
+        }
+
+    }
+
     public function imagenRecortada(){
 	    
 		$data = $_POST['image'];
@@ -244,20 +292,20 @@ class ADMINPropiedades extends BaseController{
 
     public function imageneseliminar($imagen_id = null){
 		
-		$model = new EmprendedoresimagenesModel();
-		$select = $model->where('id', $imagen_id)->first();
-		$model->where('id', $imagen_id)->delete();
+		$PropiedadesimagenesModel = new PropiedadesimagenesModel();
+		$select = $PropiedadesimagenesModel->where('id', $imagen_id)->first();
+		$PropiedadesimagenesModel->where('id', $imagen_id)->delete();
 
-        $existPrincipal = $model->existPrincipal($imagen_id);
+        $existPrincipal = $PropiedadesimagenesModel->existPrincipal($imagen_id);
 		if ( $existPrincipal->existe == 0 ) {
-			$model = new EmprendedoresimagenesModel();
-	        $selectup = $model->where('emprendedores_id', $select['emprendedores_id'])->first();
+			//$PropiedadesimagenesModel = new EmprendedoresimagenesModel();
+	        $selectup = $PropiedadesimagenesModel->where('propiedades_id', $select['propiedades_id'])->first();
 	        $saveup = [ 'principal' => 1 ];
 
-	        $model->update($selectup['id'], $saveup);
+	        $PropiedadesimagenesModel->update($selectup['id'], $saveup);
 	    }
 
-		unlink('imagenes/'.$select['file']);
+		//unlink('imagenes/'.$select['file']);
 
 		$data = [
 	        'success' => true,

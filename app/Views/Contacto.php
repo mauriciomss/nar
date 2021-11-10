@@ -40,26 +40,26 @@
                     <div class="col-sm-12 section-t8">
                         <div class="row">
                             <div class="col-md-7">
-                                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <form action="<?=base_url('contact');?>" method="post" role="form" class="php-email-form">
                                     <div class="row">
                                         <div class="col-md-6 mb-3">
                                             <div class="form-group">
-                                                <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Nombre" required>
+                                                <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Nombre" value="nombre" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <div class="form-group">
-                                                <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Email" required>
+                                                <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Email" value="mauriciomss@gmail.com" required>
                                             </div>
                                         </div>
                                         <div class="col-md-12 mb-3">
                                             <div class="form-group">
-                                                <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Asunto" required>
+                                                <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Asunto"  value="asunto" required>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <textarea name="message" class="form-control" name="message" cols="45" rows="8" placeholder="Mensaje" required></textarea>
+                                                <textarea name="message" class="form-control" name="message" cols="45" rows="8" placeholder="Mensaje" required>bla bla bla</textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-12 my-3">

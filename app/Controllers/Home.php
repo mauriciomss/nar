@@ -35,4 +35,20 @@ class Home extends BaseController
 
 		return view('Contacto', $data);
 	}
+
+	public function contact()
+	{
+
+		helper(['form', 'url']);
+
+		$data = [
+	        'ok' => true
+		];
+
+		return $this->response->setJSON($data);
+		//response.ok
+
+	}
+	
+
 }
