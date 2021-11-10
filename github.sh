@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#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
+#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
 
 #para que no pida mas las credenciales
 #git config --global credential.helper cache
