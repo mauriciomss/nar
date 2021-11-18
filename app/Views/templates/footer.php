@@ -70,19 +70,55 @@
 
         $(document).ready(function(){
 
-            $(document).on("click","#enviar", function(event) {
-					
-	            $.ajax({
-	                type: "POST",
-	                url: "index.php?ctrl=Inicio&accion=Contacto",
-	                data: "nombre="+$("#cnombre").val()+"&email="+$("#cemail").val()+"&message="+$("#cmessage").val(),
-	                dataType : 'json',                     
-	                success: function(data) {
-	                	$("#myModalEnviar").modal("show");
-	                }
-	            });					
-				
-            	return false;
+
+
+
+
+
+            $(document).on("click","#sendcontact", function(event) {
+                event.preventDefault();
+                $(".error-message").hide();
+                $(".sent-message").hide();
+
+                var name = $("#name").val();
+                var email = $("#email").val();
+                var subject = $("#subject").val();
+                var message = $("#message").val();
+                if(name=='' || email=='' || subject=='' || message=='')
+                {
+                    $(".error-message").html('Todos los campos son obligatorios');
+                    $(".error-message").show();
+                }
+                else
+                {
+                    $.ajax({
+                        type: "POST",
+                        url: '<?=base_url('contact');?>',
+                        data: $('#php-email-form').serialize(),
+                        dataType : 'json',
+                        beforeSend: function() {
+                            $(".loading").show();
+                        },
+                        success: function() {
+                            $("#name").val('');
+                            $("#email").val('');
+                            $("#subject").val('');
+                            $("#message").val('');
+                                                    
+                            $(".loading").hide();
+                            $(".sent-message").show();
+
+                            $('#php-email-form')[0].reset();
+                        },
+                        error: function (request,error) {
+                            $(".loading").hide();
+                            $(".error-message").html('Se produjo un error de red, por favor intente nuevamente!');
+                            $(".error-message").show();
+                        }
+                    });
+                }
+    
+                return false;
             });
 
         });
