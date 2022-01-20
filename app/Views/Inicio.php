@@ -59,7 +59,7 @@
                     <div class="swiper-wrapper">
 
 
-                        <?php foreach ($destacadas as $item): ?>
+                        <?php foreach ($ultimas as $item): ?>
                         <div class="carousel-item-b swiper-slide">
                             <div class="card-box-a card-shadow">
                                 <div class="img-box-a">
@@ -69,7 +69,7 @@
                                     <div class="card-overlay-a-content">
                                         <div class="card-header-a">
                                             <h2 class="card-title-a">
-                                                <a href="property-single.html"><?=$item['titulo'] ?>
+                                                <a href="<?=base_url();?>/propiedades/<?=$item['slug'] ?>"><?=$item['titulo'] ?>
                                                     <br /><?=$item['subtitulo'] ?></a>
                                             </h2>
                                         </div>

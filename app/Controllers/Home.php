@@ -95,4 +95,11 @@ class Home extends BaseController
 	}
 	
 
+	public function encontruccion()
+	{
+		$data['title'] = 'Sección en contrucción';
+
+		return view('EnContruccion', $data);
+	}
+
 }

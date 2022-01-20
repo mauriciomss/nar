@@ -1,0 +1,39 @@
+Optimizar el sitio: https://nardesarrollos.com.ar/
+
+
+Reparar:
+OK-> error link titulo NAR desarrollo, error 404
+OK-> error listado ultimas propiedades del inicio
+OK-> error link titulo de cada propiedad 
+
+------
+OK-> Modificación orden menú servicios
+    -Construcción
+    -Refacciones y ampliaciones
+    -Smart House
+    -Piletas
+
+------
+Cargar con contenido a paginas, símil detalle de una propiedad:
+-Refacciones y ampliaciones
+-Smart House
+-Piletas
+
+------
+Modificar pagina Briax similar: https://brimaxargentina.com.ar/beneficios/ 
+
+------
+Sub-menú construcción, de servicios, hacer expandible tipo servicios del menú principal.
+
+------
+OK-> Modificar orden del mapa en sección contactos
+
+*****************************************************************
+
+OK-> Agregar corralon al menú principal
+
+-Generar la sección de corralon similar a un carro de compras pero sin la opción comprar, sino que puede seleccionar los artículos y su cantidad.
+Al finalizar, solicita los datos de contacto para envió del presupuesto.
+Enviar un mail con el detalle a un mail institucional, y otro al cliente para saber que se esta trabajando.
+
+-Crear un panel para carga, modificación y baja de los artículos publicados.

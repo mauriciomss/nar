@@ -35,6 +35,8 @@ $routes->setAutoRoute(true);
 // SITIO VISITANTES
 $routes->get('/', 'Home::index');
 
+$routes->get('encontruccion', 'Home::encontruccion');
+
 $routes->get('propiedades/buscar/(:segment)', 'Propiedades::buscar/$1');
 
 $routes->get('propiedades', 'Propiedades::index');

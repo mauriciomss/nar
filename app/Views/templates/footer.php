@@ -11,6 +11,9 @@
                                 <a href="<?=base_url();?>/propiedades">Propiedades</a>
                             </li>
                             <li class="list-inline-item">
+                                <a href="<?=base_url();?>/encontruccion">Mi corralón</a>
+                            </li>                            
+                            <li class="list-inline-item">
                                 <a href="<?=base_url('contacto');?>">Contacto</a>
                             </li>
                         </ul>

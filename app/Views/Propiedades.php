@@ -45,7 +45,7 @@
 									<div class="card-overlay-a-content">
 										<div class="card-header-a">
 											<h2 class="card-title-a">
-												<a href="property-single.html"><?=$item['titulo'] ?>
+												<a href="<?=base_url();?>/propiedades/<?=$item['slug'] ?>"><?=$item['titulo'] ?>
 													<br /><?=$item['subtitulo'] ?></a>
 											</h2>
 										</div>

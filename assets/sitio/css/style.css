@@ -97,7 +97,7 @@ a:hover {
 
 .text-brand {
   color: #000000;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 @media (max-width: 767px) {
@@ -590,7 +590,7 @@ a:hover {
   }
 }
 .navbar-default.navbar-trans .nav-link, .navbar-default.navbar-reduce .nav-link {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #000000;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -1486,16 +1486,16 @@ a:hover {
 }
 
 .card-box-ico {
-  padding: 1rem 3rem 1rem 2.5rem;
+  padding: 1rem 3rem 1rem 1.5rem;
   border: 5px solid #2eca6a;
 }
 .card-box-ico span {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #000000;
 }
 
 .title-c {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-left: -40px;
 }
@@ -1506,7 +1506,7 @@ a:hover {
 }
 @media (min-width: 992px) {
   .title-c {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 

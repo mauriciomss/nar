@@ -31,13 +31,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="contact-map box">
-                        <div id="map" class="contact-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52668.88792517117!2d-58.747557267227606!3d-34.40628941760035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca19b02356b39%3A0xce459fa6c72e54ab!2sBenavidez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1625744752465!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 section-t8">
                         <div class="row">
                             <div class="col-md-7">
                                 <form action="<?=base_url('contact');?>" method="post" role="form" class="php-email-form" id="php-email-form">
@@ -105,7 +98,7 @@
                                         </div>
                                         <div class="icon-box-content">
                                             <p class="mb-1">
-                                            Benavidez, BS.AS.,
+                                                Benavidez, BS.AS.,
                                                 <br> Argentina.
                                             </p>
                                         </div>
@@ -140,6 +133,15 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="col-sm-12 section-t8">
+                        <div class="contact-map box">
+                        <div id="map" class="contact-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52668.88792517117!2d-58.747557267227606!3d-34.40628941760035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca19b02356b39%3A0xce459fa6c72e54ab!2sBenavidez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1625744752465!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section><!-- End Contact Single-->

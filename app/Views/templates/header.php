@@ -168,7 +168,7 @@
                 <span></span>
                 <span></span>
             </button>
-            <a class="navbar-brand text-brand" href="index.html">NAR<span class="color-b"> desarrollos inmobiliarios</span></a>
+            <a class="navbar-brand text-brand" href="<?=base_url();?>">NAR<span class="color-b"> desarrollos inmobiliarios</span></a>
 
             <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
                 <ul class="navbar-nav">
@@ -184,17 +184,20 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Refacciones y ampliaciones</a>
-                            <a class="dropdown-item" href="#">Piletas</a>
-                            <a class="dropdown-item" href="#">Smart Houses</a>
                             <a class="dropdown-item" href="#">Construcción</a>
                             <ul>
                                 <li><a href="<?=base_url('/servicios/tradicional');?>"><strong>Tradicional</strong></a></li>
                                 <li><a href="<?=base_url('/servicios/steel_framing');?>"><strong>Steel Framing</strong></a></li>
                                 <li><a href="<?=base_url('/servicios/brimax');?>"><strong>Brimax</strong></a></li>
                             </ul>
-                            <a class="dropdown-item" href="#">Mi corralón</a>
+                            <a class="dropdown-item" href="<?=base_url('encontruccion');?>">Refacciones y ampliaciones</a>
+                            <a class="dropdown-item" href="<?=base_url('encontruccion');?>">Smart Houses</a>
+                            <a class="dropdown-item" href="<?=base_url('encontruccion');?>">Piletas</a>
                         </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="<?=base_url('encontruccion');?>">Mi corralón</a>
                     </li>
 
                     <li class="nav-item">
