@@ -220,7 +220,7 @@
                     -->
 
                     <li class="nav-item">
-                        <a class="nav-link " href="<?=base_url('encontruccion');?>">Mi corralón</a>
+                        <a class="nav-link " href="<?=base_url('corralon');?>">Mi corralón</a>
                     </li>
 
                     <li class="nav-item">
