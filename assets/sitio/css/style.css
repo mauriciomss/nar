@@ -1920,3 +1920,42 @@ footer .copyright-footer {
 footer .credits {
   font-size: 14px;
 }
+
+
+
+
+
+
+.dropdown-menu span {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 0;
+    display: block;
+    border-bottom: 3px solid #2eca6a;
+    /*text-decoration: underline #2eca6a;*/
+}
+.dropdown-menu span::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.dropdown-menu .slide {
+    clear:both;
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+.dropdown-menu #touch {position: absolute; opacity: 0; height: 0px;}    
+
+.dropdown-menu #touch:checked + .slide {height: 80px;}    

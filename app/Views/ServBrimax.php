@@ -37,7 +37,7 @@
                                 <div class="card-box-c foo">
                                     <div class="card-header-c d-flex">
                                         <div class="card-box-ico">
-                                            <span class="bi bi-cart"></span>
+                                            <span class="bi bi-thermometer-snow"></span>
                                         </div>
                                         <div class="card-title-c align-self-center">
                                             <h2 class="title-c">Térmicos</h2>
@@ -54,7 +54,7 @@
                                 <div class="card-box-c foo">
                                     <div class="card-header-c d-flex">
                                         <div class="card-box-ico">
-                                            <span class="bi bi-calendar4-week"></span>
+                                            <span class="bi bi-recycle"></span>
                                         </div>
                                         <div class="card-title-c align-self-center">
                                             <h2 class="title-c">Ecológicos</h2>
@@ -73,7 +73,7 @@
                                 <div class="card-box-c foo">
                                     <div class="card-header-c d-flex">
                                         <div class="card-box-ico">
-                                            <span class="bi bi-card-checklist"></span>
+                                            <span class="bi bi-calendar2-check"></span>
                                         </div>
                                         <div class="card-title-c align-self-center">
                                             <h2 class="title-c">Duraderos</h2>
@@ -90,7 +90,7 @@
                                 <div class="card-box-c foo">
                                     <div class="card-header-c d-flex">
                                         <div class="card-box-ico">
-                                            <span class="bi bi-card-checklist"></span>
+                                            <span class="bi bi-emoji-smile"></span>
                                         </div>
                                         <div class="card-title-c align-self-center">
                                             <h2 class="title-c">Confortables</h2>
@@ -107,7 +107,7 @@
                                 <div class="card-box-c foo">
                                     <div class="card-header-c d-flex">
                                         <div class="card-box-ico">
-                                            <span class="bi bi-card-checklist"></span>
+                                            <span class="bi bi-volume-mute-fill"></span>
                                         </div>
                                         <div class="card-title-c align-self-center">
                                             <h2 class="title-c">Acusticos</h2>
@@ -124,7 +124,7 @@
                                 <div class="card-box-c foo">
                                     <div class="card-header-c d-flex">
                                         <div class="card-box-ico">
-                                            <span class="bi bi-card-checklist"></span>
+                                            <span class="bi bi-award"></span>
                                         </div>
                                         <div class="card-title-c align-self-center">
                                             <h2 class="title-c">Ignífugos</h2>
@@ -141,7 +141,7 @@
                                 <div class="card-box-c foo">
                                     <div class="card-header-c d-flex">
                                         <div class="card-box-ico">
-                                            <span class="bi bi-card-checklist"></span>
+                                            <span class="bi bi-rulers"></span>
                                         </div>
                                         <div class="card-title-c align-self-center">
                                             <h2 class="title-c">Lisomáximo</h2>
@@ -158,7 +158,7 @@
                                 <div class="card-box-c foo">
                                     <div class="card-header-c d-flex">
                                         <div class="card-box-ico">
-                                            <span class="bi bi-card-checklist"></span>
+                                            <span class="bi bi-bullseye"></span>
                                         </div>
                                         <div class="card-title-c align-self-center">
                                             <h2 class="title-c">Precisos</h2>
@@ -175,7 +175,7 @@
                                 <div class="card-box-c foo">
                                     <div class="card-header-c d-flex">
                                         <div class="card-box-ico">
-                                            <span class="bi bi-card-checklist"></span>
+                                            <span class="bi bi-house-fill"></span>
                                         </div>
                                         <div class="card-title-c align-self-center">
                                             <h2 class="title-c">Vérsatiles</h2>
@@ -192,7 +192,7 @@
                                 <div class="card-box-c foo">
                                     <div class="card-header-c d-flex">
                                         <div class="card-box-ico">
-                                            <span class="bi bi-card-checklist"></span>
+                                            <span class="bi bi-wind"></span>
                                         </div>
                                         <div class="card-title-c align-self-center">
                                             <h2 class="title-c">Livianos</h2>
@@ -209,7 +209,7 @@
                                 <div class="card-box-c foo">
                                     <div class="card-header-c d-flex">
                                         <div class="card-box-ico">
-                                            <span class="bi bi-card-checklist"></span>
+                                            <span class="bi bi-bricks"></span>
                                         </div>
                                         <div class="card-title-c align-self-center">
                                             <h2 class="title-c">Portantes</h2>

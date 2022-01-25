@@ -184,6 +184,28 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
                         <div class="dropdown-menu">
+
+                            <label for="touch"><span>Construcción</span></label>               
+                            <input type="checkbox" id="touch"> 
+                            <ul class="slide">
+                                <li><a href="<?=base_url('/servicios/tradicional');?>"><strong>Tradicional</strong></a></li>
+                                <li><a href="<?=base_url('/servicios/steel_framing');?>"><strong>Steel Framing</strong></a></li>
+                                <li><a href="<?=base_url('/servicios/brimax');?>"><strong>Brimax</strong></a></li>
+                            </ul>
+
+                            <a class="dropdown-item" href="<?=base_url('encontruccion');?>">Refacciones y ampliaciones</a>
+                            <a class="dropdown-item" href="<?=base_url('encontruccion');?>">Smart Houses</a>
+                            <a class="dropdown-item" href="<?=base_url('encontruccion');?>">Piletas</a>
+                        </div>
+                    </li>
+
+
+
+
+                    <!--
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Construcción</a>
                             <ul>
                                 <li><a href="<?=base_url('/servicios/tradicional');?>"><strong>Tradicional</strong></a></li>
@@ -195,6 +217,7 @@
                             <a class="dropdown-item" href="<?=base_url('encontruccion');?>">Piletas</a>
                         </div>
                     </li>
+                    -->
 
                     <li class="nav-item">
                         <a class="nav-link " href="<?=base_url('encontruccion');?>">Mi corralón</a>
@@ -212,4 +235,3 @@
 
         </div>
     </nav><!-- End Header/Navbar -->
-
