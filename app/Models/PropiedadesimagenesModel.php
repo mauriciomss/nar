@@ -25,6 +25,6 @@ class PropiedadesimagenesModel extends Model
         $row = $query->getRow();
 
         return $row;
-    }    
+    }
 
 }

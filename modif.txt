@@ -1,4 +1,5 @@
-Optimizar el sitio: https://nardesarrollos.com.ar/
+
+AVANCES: Optimizar el sitio: https://nardesarrollos.com.ar/
 
 
 Reparar:
@@ -20,10 +21,10 @@ Cargar con contenido a paginas, símil detalle de una propiedad:
 -Piletas
 
 ------
-Modificar pagina Briax similar: https://brimaxargentina.com.ar/beneficios/ 
+OK-> Modificar pagina Briax similar: https://brimaxargentina.com.ar/beneficios/ 
 
 ------
-Sub-menú construcción, de servicios, hacer expandible tipo servicios del menú principal.
+OK-> Sub-menú construcción, de servicios, hacer expandible tipo servicios del menú principal.
 
 ------
 OK-> Modificar orden del mapa en sección contactos
@@ -37,3 +38,4 @@ Al finalizar, solicita los datos de contacto para envió del presupuesto.
 Enviar un mail con el detalle a un mail institucional, y otro al cliente para saber que se esta trabajando.
 
 -Crear un panel para carga, modificación y baja de los artículos publicados.
+
